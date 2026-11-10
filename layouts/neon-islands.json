@@ -1,0 +1,195 @@
+{
+  "id": "root",
+  "type": "row",
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "children": [
+        {
+          "id": "brand",
+          "type": "block",
+          "content": {
+            "mod": "islands-workspace-chrome"
+          },
+          "size": {
+            "px": 38
+          },
+          "border": {
+            "width": 1,
+            "color": "border"
+          },
+          "radius": 12,
+          "window_drag": true
+        },
+        {
+          "id": "sidebar-lists",
+          "type": "column",
+          "children": [
+            {
+              "id": "spaces",
+              "type": "block",
+              "content": {
+                "mod": "islands-spaces"
+              },
+              "size": {
+                "weight": 1.3
+              },
+              "min": 90
+            },
+            {
+              "id": "agents",
+              "type": "block",
+              "content": {
+                "mod": "islands-agents"
+              },
+              "size": {
+                "weight": 0.7
+              },
+              "min": 90
+            }
+          ],
+          "gap": 0,
+          "radius": 12,
+          "border": {
+            "width": 1,
+            "color": "border"
+          },
+          "divider": {
+            "width": 1,
+            "color": "border"
+          }
+        }
+      ],
+      "size": {
+        "px": 226
+      },
+      "min": 44,
+      "max": 480,
+      "gap": 8,
+      "resizable": false
+    },
+    {
+      "id": "work",
+      "type": "column",
+      "children": [
+        {
+          "id": "tabs",
+          "type": "block",
+          "content": {
+            "mod": "islands-tabs"
+          },
+          "size": {
+            "px": 38
+          },
+          "window_drag": true
+        },
+        {
+          "id": "work-body",
+          "type": "row",
+          "children": [
+            {
+              "id": "main",
+              "type": "block",
+              "content": {
+                "tab": "active",
+                "pane": {
+                  "header": {
+                    "content": {
+                      "mod": "islands-pane"
+                    },
+                    "reveal": "always",
+                    "height": 30,
+                    "position": "top"
+                  },
+                  "background": "#0b0f17d9",
+                  "border": {
+                    "width": 1,
+                    "color": "border"
+                  },
+                  "focus": {
+                    "width": 1,
+                    "color": "#64d2ffb3"
+                  },
+                  "radius": 12,
+                  "gap": 8,
+                  "lone": true
+                }
+              }
+            },
+            {
+              "id": "panel",
+              "type": "column",
+              "children": [
+                {
+                  "id": "panel-body",
+                  "type": "stack",
+                  "children": [
+                    {
+                      "id": "files",
+                      "type": "block",
+                      "content": {
+                        "mod": "files"
+                      }
+                    },
+                    {
+                      "id": "changes",
+                      "type": "block",
+                      "content": {
+                        "mod": "changes"
+                      }
+                    }
+                  ],
+                  "active": "changes"
+                }
+              ],
+              "size": {
+                "px": 368
+              },
+              "min": 280,
+              "max": 900,
+              "hidden": true
+            }
+          ],
+          "padding": 0,
+          "gap": 8
+        },
+        {
+          "id": "status",
+          "type": "block",
+          "content": {
+            "mod": "islands-workspace-status"
+          },
+          "size": {
+            "px": 32
+          },
+          "border": {
+            "width": 1,
+            "color": "border"
+          },
+          "radius": 12
+        }
+      ],
+      "gap": 8,
+      "resizable": false
+    }
+  ],
+  "background": {
+    "image": "backgrounds/neon-islands.png",
+    "fit": "cover"
+  },
+  "padding": 10,
+  "theme": "neon-islands",
+  "terminal_padding": [
+    16,
+    14
+  ],
+  "terminal_opacity": 0,
+  "gap": 8,
+  "titlebar": "none",
+  "traffic_lights": [
+    24,
+    28
+  ],
+  "preview": "layouts/neon-islands.svg"
+}
